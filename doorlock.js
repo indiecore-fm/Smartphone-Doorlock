@@ -37,7 +37,7 @@ var motorPin = 14;
 var buttonPin = 4
 var ledPin = 17
 
-var blynkToken = 'blynk_token_here';
+var blynkToken = 'd886ce56d06249b2834df47917dbf605
 
 // *** Start code *** //
 
@@ -59,7 +59,7 @@ var blynk = new Blynk.Blynk(blynkToken);
 var v0 = new blynk.VirtualPin(0);
 
 console.log("locking door")
-lockDoor()
+//lockDoor()
 
 button.on('interrupt', function (level) {
 	console.log("level: " + level + " locked: " + locked)
