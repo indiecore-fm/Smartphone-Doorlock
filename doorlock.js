@@ -30,14 +30,14 @@
 // project
 //
 // **************************************** //
-var unlockedState = 1000;
-var lockedState = 2200;
+var unlockedState = 10;
+var lockedState = 10;
 
 var motorPin = 14;
 var buttonPin = 4
 var ledPin = 17
 
-var blynkToken = 'd886ce56d06249b2834df47917dbf605
+var blynkToken = 'd886ce56d06249b2834df47917dbf605'
 
 // *** Start code *** //
 
@@ -58,7 +58,7 @@ var Blynk = require('blynk-library');
 var blynk = new Blynk.Blynk(blynkToken);
 var v0 = new blynk.VirtualPin(0);
 
-console.log("locking door")
+//console.log("locking door")
 //lockDoor()
 
 button.on('interrupt', function (level) {
